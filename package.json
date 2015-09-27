@@ -1,0 +1,40 @@
+{
+  "name": "phest",
+  "version": "0.0.0",
+
+  "author": {
+    "name": "meisterluk",
+    "email": "admin@lukas-prokop.at",
+    "url": "http://lukas-prokop.at/proj/phest"
+  },
+  "bin": { "phest": "bin/phest.js" },
+  "bugs": { "url": "http://github.com/prokls/phest/issues" },
+  "contributors": [
+    { "name": "Marc Schober" },
+    { "name": "Andreas Schulhofer" },
+    { "name": "Richard Schumi" },
+    { "name": "Christof Rabensteiner" }
+  ],
+  "dependencies": {
+    "http-status-codes": "1.0.x",
+    "minimist": "1.1.x",
+    "mocha": "2.2.5",
+    "path": "0.11.x",
+    "phridge": "1.0.7",
+    "q": "1.2.0",
+    "request": "2.53.0",
+    "yadda": "0.11.5"
+  },
+  "description": "This package extends phridge by using yadda for Gherkin files",
+  "devDependencies": {
+    "jsdoc": "<=3.3.0"
+  },
+  "files": ["bin"],
+  "keywords": ["testing", "phantomjs", "Gherkin", "mocha", "yadda"],
+  "license": "Public Domain",
+  "main": "inmocha/api.js",
+  "repository": { "type": "git", "url": "git://github.com/prokls/phest" },
+  "scripts": {
+    "test": "mocha bin/phest.js examples/google.js"
+  }
+}
